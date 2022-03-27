@@ -1,0 +1,55 @@
+﻿@using TemplateProjectOne.Application.Services.Common.GetItemMenu
+@model List<ItemMenuDto>
+@{
+    Layout = null;
+}
+
+@foreach (var item in Model)
+{
+    <li>
+        <a href="" class="sf-with-ul">@item.Name</a>
+
+        <div class="megamenu megamenu-sm">
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <div class="menu-col">
+                        <div class="menu-title">تمام محصولات</div><!-- End .menu-title -->
+                        @if (item.Child.Count() > 0)
+                        {
+                            @foreach (var ChildItem in item.Child)
+                            {
+                                <ul>
+
+                                    <li>
+                                        <a href="~/Product/Index?CatId=@ChildItem.Id">
+                                            @ChildItem.Name
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            }
+                        }
+
+
+                    </div><!-- End .menu-col -->
+            </div><!-- End .col-md-6 -->
+
+            <div class="col-md-6">
+                    <div class="banner banner-overlay">
+                        <a href="category.html">
+                            <img src="~/SiteTemplaate/assets/images/menu/banner-2.jpg" alt="Banner">
+
+                            <div class="banner-content banner-content-bottom">
+                                <div class="banner-title text-white">
+                                    محصولات
+                                    جدید<br><span><strong>بهار 1399</strong></span>
+                                </div>
+                                <!-- End .banner-title -->
+                        </div><!-- End .banner-content -->
+                    </a>
+                    </div><!-- End .banner -->
+            </div><!-- End .col-md-6 -->
+        </div><!-- End .row -->
+    </div><!-- End .megamenu megamenu-sm -->
+</li>
+}
