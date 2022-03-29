@@ -1,13 +1,10 @@
 #Online Store
-در این پروژه تمرینی قصد دارم با معماری clean یک فروشگاه آنلاین ایجاد کنم که امکانات معمول یک فروشگاه آنلاین را داراست
-در این پروژه از ابزارهایی نظیر:
+In this training project, I intend to create an online store with clean architecture that has the usual features of an online store.
+In this project, tools such as:
 - **Html & Css**
 - **BootStrap**
 - **JQuery**
 - **JavaScript**
 - **SQL Server*
 , ....
-استفاد شده است.
-این پروژه در حال تکمیل است و در آینده امکانات بیشتری به این پروژه اضافه خواهد شد
-علاوه بر این ابزارهای بیشتری نیز به این پروژه اضافه خواهد شد.
-این اولین پروژه حرفه ای من است و تبعا ایراداتی در آن وجود خواهد داشت که تمام تلاش من برای رفع این اشکالات با یادگیری بیشتر است.
+used.
