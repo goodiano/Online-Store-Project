@@ -15,6 +15,8 @@ namespace TemplateProjectOne.Application.Services.Carts
         RegisterDto AddCart(int productId, Guid browserId);
         RegisterDto RemoveFromCart(int productId, Guid browserId);
         RegisterDto<CartDto> GetCart(Guid browserId);
+        RegisterDto Add(int CartItemId);
+        RegisterDto LowOff(int CartItemId);
     }
 
     public class CartService : ICartServices
@@ -24,6 +26,18 @@ namespace TemplateProjectOne.Application.Services.Carts
         {
             _context = context;
         }
+
+        public RegisterDto Add(int CartItemId)
+        {
+            var cartItem = _context.CartItem.Find(CartItemId);
+            cartItem.Count++;
+            _context.SaveChanges();
+            return new RegisterDto
+            {
+                IsSuccess = true
+            };
+        }
+
         public RegisterDto AddCart(int productId, Guid browserId)
         {
             var cart = _context.Cart.Where(p => p.BrowserId == browserId && p.Finished == false).FirstOrDefault();
@@ -48,21 +62,21 @@ namespace TemplateProjectOne.Application.Services.Carts
             var CartItem = _context.CartItem.Where(p => p.ProductId == productId && p.CartId == cart.Id).FirstOrDefault();
             
 
-            if(product != null)
+            if(CartItem != null)
             {
                 CartItem.Count++;
             }
             else
             {
-                CartItem newCardItem = new CartItem()
+                CartItem newCartItem = new CartItem()
                 {
                     Product = product,
                     Count = 1,
                     Price = product.Price,
-                    Cart = cart,
+                    Cart = cart,   
                 };
 
-                _context.CartItem.Add(newCardItem);
+                _context.CartItem.Add(newCartItem);
                 _context.SaveChanges();
             }
 
@@ -80,24 +94,48 @@ namespace TemplateProjectOne.Application.Services.Carts
             var cart = _context.Cart
                 .Include(p => p.CartItems)
                 .ThenInclude(p => p.Product)
+                .ThenInclude(p => p.ProductImages)
                 .Where(p => p.BrowserId == browserId && p.Finished == false)
                 .OrderByDescending(p => p.Id)
                 .FirstOrDefault();
 
-            return new RegisterDto<CartDto>
+            return new RegisterDto<CartDto>()
             {
-                Data = new CartDto
+                Data = new CartDto()
                 {
+                    SumAmount = cart.CartItems.Sum(p=> p.Price * p.Count),
                     CartItems = cart.CartItems.Select(p => new CartItemDto
                     {
                         Count = p.Count,
                         Price = p.Price,
-                        Product = p.Product.Name
+                        Product = p.Product.Name,
+                        Id = p.Id,
+                        Images = p.Product?.ProductImages?.FirstOrDefault()?.Src?? ""                      
                     }).ToList()
                 },
                 IsSuccess = true,
             };
                 
+        }
+
+        public RegisterDto LowOff(int CartItemId)
+        {
+
+            var cartItem = _context.CartItem.Find(CartItemId);
+            if(cartItem.Count <= 1)
+            {
+                new RegisterDto
+                {
+                    IsSuccess = false
+                };
+            }
+
+            cartItem.Count--;
+            _context.SaveChanges();
+            return new RegisterDto
+            {
+                IsSuccess = true
+            };
         }
 
         public RegisterDto RemoveFromCart(int productId, Guid browserId)
@@ -131,10 +169,14 @@ namespace TemplateProjectOne.Application.Services.Carts
 
     public class CartDto
     {
+        public decimal SumAmount { get; set; }
         public List<CartItemDto> CartItems { get; set; }
     }
     public class CartItemDto
     {
+        public int Id { get; set; }
+        public string Images { get; set; }
+
         public string Product { get; set; }
         public decimal Price { get; set; }
         public int Count { get; set; }
