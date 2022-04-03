@@ -34,6 +34,20 @@
             }
         }
 
+        public Guid GetBrowserId(HttpContext httpContext)
+        {
+            var browserId = GetValue(httpContext, "BrowserId");
+            if(browserId == null)
+            {
+                string value = Guid.NewGuid().ToString();
+                Add(httpContext, "BrowserId", value);
+                browserId = value;
+            }
+            Guid guidBrowser;
+            Guid.TryParse(browserId, out guidBrowser);
+            return guidBrowser;
+        }
+
         //Set options for cookies
         private CookieOptions getCookieOptions(HttpContext context)
         {
