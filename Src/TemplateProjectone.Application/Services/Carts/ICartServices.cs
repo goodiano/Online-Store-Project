@@ -14,7 +14,7 @@ namespace TemplateProjectOne.Application.Services.Carts
     {
         RegisterDto AddCart(int productId, Guid browserId);
         RegisterDto RemoveFromCart(int productId, Guid browserId);
-        RegisterDto<CartDto> GetCart(Guid browserId);
+        RegisterDto<CartDto> GetCart(Guid browserId, int? UserId);
         RegisterDto Add(int CartItemId);
         RegisterDto LowOff(int CartItemId);
     }
@@ -41,7 +41,7 @@ namespace TemplateProjectOne.Application.Services.Carts
         public RegisterDto AddCart(int productId, Guid browserId)
         {
             var cart = _context.Cart.Where(p => p.BrowserId == browserId && p.Finished == false).FirstOrDefault();
-            if(cart == null)
+            if (cart == null)
             {
                 Cart newCart = new Cart()
                 {
@@ -60,9 +60,9 @@ namespace TemplateProjectOne.Application.Services.Carts
             //the product and because we do not have access to the browserId
             //on the CartItem, we used the ID in card itself.
             var CartItem = _context.CartItem.Where(p => p.ProductId == productId && p.CartId == cart.Id).FirstOrDefault();
-            
 
-            if(CartItem != null)
+
+            if (CartItem != null)
             {
                 CartItem.Count++;
             }
@@ -73,7 +73,7 @@ namespace TemplateProjectOne.Application.Services.Carts
                     Product = product,
                     Count = 1,
                     Price = product.Price,
-                    Cart = cart,   
+                    Cart = cart,
                 };
 
                 _context.CartItem.Add(newCartItem);
@@ -85,13 +85,15 @@ namespace TemplateProjectOne.Application.Services.Carts
                 IsSuccess = true,
                 Message = $"محصول {product.Name} با موفقیت به سبد خرید افزوده شد"
             };
-            
+
 
         }
 
-        public RegisterDto<CartDto> GetCart(Guid browserId)
+        public RegisterDto<CartDto> GetCart(Guid browserId, int? UserId)
         {
-            var cart = _context.Cart
+            try
+            {
+                var cart = _context.Cart
                 .Include(p => p.CartItems)
                 .ThenInclude(p => p.Product)
                 .ThenInclude(p => p.ProductImages)
@@ -99,30 +101,56 @@ namespace TemplateProjectOne.Application.Services.Carts
                 .OrderByDescending(p => p.Id)
                 .FirstOrDefault();
 
-            return new RegisterDto<CartDto>()
-            {
-                Data = new CartDto()
+
+                if (cart == null)
                 {
-                    SumAmount = cart.CartItems.Sum(p=> p.Price * p.Count),
-                    CartItems = cart.CartItems.Select(p => new CartItemDto
+                    return new RegisterDto<CartDto>()
                     {
-                        Count = p.Count,
-                        Price = p.Price,
-                        Product = p.Product.Name,
-                        Id = p.Id,
-                        Images = p.Product?.ProductImages?.FirstOrDefault()?.Src?? ""                      
-                    }).ToList()
-                },
-                IsSuccess = true,
-            };
-                
+                        Data = new CartDto()
+                        {
+                            CartItems = new List<CartItemDto>()
+                        },
+                        IsSuccess = false,
+                    };
+                }
+                if (UserId != null)
+                {
+                    var user = _context.Users.Find(UserId);
+                    cart.User = user;
+                    _context.SaveChanges();
+                }
+
+
+                return new RegisterDto<CartDto>()
+                {
+                    Data = new CartDto()
+                    {
+                        CountProduct = cart.CartItems.Count(),
+                        SumAmount = cart.CartItems.Sum(p => p.Price * p.Count),
+                        CartItems = cart.CartItems.Select(p => new CartItemDto
+                        {
+                            Count = p.Count,
+                            Price = p.Price,
+                            Product = p.Product.Name,
+                            Id = p.Id,
+                            Images = p.Product?.ProductImages?.FirstOrDefault()?.Src ?? ""
+                        }).ToList()
+                    },
+                    IsSuccess = true,
+                };
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
         }
 
         public RegisterDto LowOff(int CartItemId)
         {
 
             var cartItem = _context.CartItem.Find(CartItemId);
-            if(cartItem.Count <= 1)
+            if (cartItem.Count <= 1)
             {
                 new RegisterDto
                 {
@@ -155,7 +183,7 @@ namespace TemplateProjectOne.Application.Services.Carts
                 return new RegisterDto
                 {
                     IsSuccess = true,
-                    Message = $"محصول {cartItem.Product.Name} از سبد خرید شما حذف شد"
+                    Message = "محصول از سبد خرید شما حذف شد"
                 };
             }
 
@@ -169,6 +197,7 @@ namespace TemplateProjectOne.Application.Services.Carts
 
     public class CartDto
     {
+        public int CountProduct { get; set; }
         public decimal SumAmount { get; set; }
         public List<CartItemDto> CartItems { get; set; }
     }
