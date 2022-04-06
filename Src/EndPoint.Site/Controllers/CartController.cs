@@ -16,7 +16,8 @@ namespace EndPoint.Site.Controllers
         }
         public IActionResult Index()
         {
-            var GetCart = _cartServices.GetCart(cookies.GetBrowserId(HttpContext));
+            var userId = ClaimUtitlity.GetUserId(User);
+            var GetCart = _cartServices.GetCart(cookies.GetBrowserId(HttpContext),userId);
             return View(GetCart.Data);
         }
 

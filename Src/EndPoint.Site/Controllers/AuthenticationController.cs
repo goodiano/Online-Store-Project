@@ -41,12 +41,17 @@ namespace EndPoint.Site.Controllers
                 new Claim(ClaimTypes.Role, "Customer"),
             };
 
+                foreach (var item in user.Data.Role)
+                {
+                    claims.Add(new Claim(ClaimTypes.Role, item));
+                }
 
                 var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                 var principal = new ClaimsPrincipal(identity);
                 var properties = new AuthenticationProperties()
                 {
-                    IsPersistent = true
+                    IsPersistent = true,
+                    ExpiresUtc = DateTime.Now.AddDays(5)
                 };
                 HttpContext.SignInAsync(principal, properties);
 
@@ -89,7 +94,6 @@ namespace EndPoint.Site.Controllers
                 new Claim(ClaimTypes.Name, request.Name),
                 new Claim(ClaimTypes.Role, "Customer"),
             };
-
 
                 var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                 var principal = new ClaimsPrincipal(identity);
