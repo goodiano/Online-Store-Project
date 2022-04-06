@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using TemplateProjectOne.Domain.Entities.Product;
 using TemplateProjectOne.Domain.Entities.Product.HomePages;
 using TemplateProjectOne.Domain.Entities.Product.HomePages.HomePageImages;
+using TemplateProjectOne.Domain.Entities.Carts;
+using TemplateProjectOne.Domain.Entities.Fainance;
 
 namespace TemplateProjectOne.Application.Interfaces.Contextes
 {
@@ -22,7 +24,9 @@ namespace TemplateProjectOne.Application.Interfaces.Contextes
         DbSet<ProductImages> ProductImages { get; set; }
         DbSet<Sliders> Sliders { get; set; }
         DbSet<HomePageImages> HomePageImages { get; set; }
-        
+        DbSet<Cart> Cart { get; set; }
+        DbSet<CartItem> CartItem { get; set; }
+        DbSet<RequestPay> RequestPay { get; set; }
 
 
         int SaveChanges(bool acceptAllChangesOnSuccess);
