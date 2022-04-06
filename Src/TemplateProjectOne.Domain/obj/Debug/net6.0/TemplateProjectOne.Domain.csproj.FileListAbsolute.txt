@@ -24,3 +24,17 @@ D:\Try\New\Template Project one\TemplateProjectOne.Domain\obj\Debug\net6.0\ref\T
 D:\Try\New\Template Project one\TemplateProjectOne.Domain\obj\Debug\net6.0\TemplateProjectOne.Domain.pdb
 D:\Try\New\Template Project one\TemplateProjectOne.Domain\obj\Debug\net6.0\TemplateProjectOne.Domain.genruntimeconfig.cache
 D:\Try\New\Template Project one\TemplateProjectOne.Domain\obj\Debug\net6.0\TemplateProjectOne.Domain.csproj.AssemblyReference.cache
+D:\Try\New\TemplateProjectOne\TemplateProjectOne.Domain\bin\Debug\net6.0\TemplateProjectOne.Domain.deps.json
+D:\Try\New\TemplateProjectOne\TemplateProjectOne.Domain\bin\Debug\net6.0\TemplateProjectOne.Domain.runtimeconfig.json
+D:\Try\New\TemplateProjectOne\TemplateProjectOne.Domain\bin\Debug\net6.0\TemplateProjectOne.Domain.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectOne.Domain\bin\Debug\net6.0\ref\TemplateProjectOne.Domain.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectOne.Domain\bin\Debug\net6.0\TemplateProjectOne.Domain.pdb
+D:\Try\New\TemplateProjectOne\TemplateProjectOne.Domain\obj\Debug\net6.0\TemplateProjectOne.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Try\New\TemplateProjectOne\TemplateProjectOne.Domain\obj\Debug\net6.0\TemplateProjectOne.Domain.AssemblyInfoInputs.cache
+D:\Try\New\TemplateProjectOne\TemplateProjectOne.Domain\obj\Debug\net6.0\TemplateProjectOne.Domain.AssemblyInfo.cs
+D:\Try\New\TemplateProjectOne\TemplateProjectOne.Domain\obj\Debug\net6.0\TemplateProjectOne.Domain.csproj.CoreCompileInputs.cache
+D:\Try\New\TemplateProjectOne\TemplateProjectOne.Domain\obj\Debug\net6.0\TemplateProjectOne.Domain.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectOne.Domain\obj\Debug\net6.0\ref\TemplateProjectOne.Domain.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectOne.Domain\obj\Debug\net6.0\TemplateProjectOne.Domain.pdb
+D:\Try\New\TemplateProjectOne\TemplateProjectOne.Domain\obj\Debug\net6.0\TemplateProjectOne.Domain.genruntimeconfig.cache
+D:\Try\New\TemplateProjectOne\TemplateProjectOne.Domain\obj\Debug\net6.0\TemplateProjectOne.Domain.csproj.AssemblyReference.cache

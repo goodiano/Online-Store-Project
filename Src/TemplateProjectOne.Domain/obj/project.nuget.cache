@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gik70gmQQVeNwH0uNQAkakYnLoTqlxmMuirC94EDtQ0st/cnnhny+fuDdezsOAm8VaDlpBDvvKEqOlslJCUQ9Q==",
+  "dgSpecHash": "i7o3K/qb6QpBgPNHGflfD9EyufDIF4Dv1Iu2LlzgY+5c1Z2lluBoMbtsRh62XNpt0Lohv3svCFuIGPPOkn77gg==",
   "success": true,
-  "projectFilePath": "D:\\Try\\New\\Template Project one\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj",
+  "projectFilePath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hossein\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Hossein\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.2\\microsoft.entityframeworkcore.6.0.2.nupkg.sha512",
