@@ -12,11 +12,13 @@ namespace TemplateProjectOne.Domain.Entities.Product
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public decimal Price { get; set; }
+        public decimal Price { get; set; } 
+        public int Count { get; set; }
         public string Brand { get; set; }
         public int Inventory { get; set; }
         public bool ShowOnSite { get; set; }
         public int CountView { get; set; }
+       
 
         //Navigation
 
