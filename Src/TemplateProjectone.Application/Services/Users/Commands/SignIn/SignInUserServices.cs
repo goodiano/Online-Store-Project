@@ -21,6 +21,7 @@ namespace TemplateProjectOne.Application.Services.Users.Commands.SignIn
                 {
                     Data = new LoginUserDto()
                     {
+                       
                     },
                     IsSuccess = false,
                     Message = "نام کاربری و رمز عبور را وارد نمایید",
@@ -42,6 +43,7 @@ namespace TemplateProjectOne.Application.Services.Users.Commands.SignIn
                 {
                     Data = new LoginUserDto()
                     {
+                       
                     },
                     IsSuccess = false,
                     Message = "کاربری با این ایمیل در سایت ثبت نام نکرده است",
@@ -63,10 +65,10 @@ namespace TemplateProjectOne.Application.Services.Users.Commands.SignIn
             }
 
 
-            var roles = "";
+            List<string> roles = new List<string>();
             foreach (var item in user.UserInRoles)
             {
-                roles += $"{item.Roles.Name}";
+                roles.Add(item.Roles.Name);
             }
 
 
