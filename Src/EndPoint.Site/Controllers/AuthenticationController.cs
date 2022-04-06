@@ -15,20 +15,20 @@ namespace EndPoint.Site.Controllers
     {
         private readonly ISignUpUserServices _signUpUserServices;
         private readonly ISignInUserServices _signInUserServices;
-        public AuthenticationController(ISignUpUserServices signUpUserServices , ISignInUserServices signInUserServices)
+        public AuthenticationController(ISignUpUserServices signUpUserServices, ISignInUserServices signInUserServices)
         {
             _signUpUserServices = signUpUserServices;
             _signInUserServices = signInUserServices;
         }
 
-        public IActionResult Signin(string ReturnUrl = "/")
+        public IActionResult SignIn(string ReturnUrl = "/")
         {
             ViewBag.url = ReturnUrl;
             return View();
         }
 
         [HttpPost]
-        public IActionResult SignIn(string Email , string Password)
+        public IActionResult SignIn(string Email, string Password)
         {
             var user = _signInUserServices.Execute(Email, Password);
             if (user.IsSuccess == true)
@@ -51,8 +51,7 @@ namespace EndPoint.Site.Controllers
                 HttpContext.SignInAsync(principal, properties);
 
             }
-
-            return View(user);
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpGet]
@@ -63,40 +62,15 @@ namespace EndPoint.Site.Controllers
 
         [HttpPost]
         public IActionResult SignUp(SignUpViewModel request)
-        {
-            if (string.IsNullOrEmpty(request.FullName) ||
-                string.IsNullOrEmpty(request.Email) ||
-                string.IsNullOrEmpty(request.Password) ||
-                string.IsNullOrEmpty(request.RePassword))
-            {
-                return Json(new RegisterDto() { IsSuccess = false, Message = "لطفا تمامی موارد را وارد نمایید" });
-            }
-
-            if (request.Password != request.RePassword)
-            {
-                return Json(new RegisterDto { IsSuccess = false, Message = "رمز عبور و تکرار آن یکسان نیست" });
-            }
-
+        {          
             if (User.Identity.IsAuthenticated == true)
             {
                 return Json(new RegisterDto { IsSuccess = false, Message = "شما وارد شده اید. نیازی به ثبت نام مجدد نیست" });
             }
 
-            if (request.Password.Length < 8)
-            {
-                return Json(new RegisterDto { IsSuccess = false, Message = "رمز عبور باید بیشتر از 8 کاراکتر باشد" });
-            }
-
-            string emailRegex = @"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9.-]+\.[A-Z]{2,}$";
-            var match = Regex.Match(request.Email, emailRegex); 
-            if(!match.Success)
-            {
-                return Json(new RegisterDto { IsSuccess = false, Message = "لطفا ایمیل صحیحی را وارد کنید مثل: test@gmail.com" });
-            }
-
             var user = _signUpUserServices.Ecexute(new RequestRegisterUserDto
             {
-                Name = request.FullName,
+                Name = request.Name,
                 Email = request.Email,
                 Password = request.Password,
                 RePassword = request.RePassword,
@@ -112,7 +86,7 @@ namespace EndPoint.Site.Controllers
             {
                 new Claim(ClaimTypes.NameIdentifier,user.Data.userId.ToString()),
                 new Claim(ClaimTypes.Email, request.Email),
-                new Claim(ClaimTypes.Name, request.FullName),
+                new Claim(ClaimTypes.Name, request.Name),
                 new Claim(ClaimTypes.Role, "Customer"),
             };
 
@@ -126,8 +100,7 @@ namespace EndPoint.Site.Controllers
                 HttpContext.SignInAsync(principal, properties);
 
             }
-
-            return View(user);
+            return Json(user);
         }
 
         public IActionResult SignOut()
