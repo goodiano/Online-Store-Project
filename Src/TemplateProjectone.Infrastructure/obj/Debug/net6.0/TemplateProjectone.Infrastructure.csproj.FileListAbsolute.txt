@@ -22,3 +22,15 @@ D:\Try\New\Template Project one\TemplateProjectone.Infrastructure\obj\Debug\net6
 D:\Try\New\Template Project one\TemplateProjectone.Infrastructure\obj\Debug\net6.0\ref\TemplateProjectOne.Infrastructure.dll
 D:\Try\New\Template Project one\TemplateProjectone.Infrastructure\obj\Debug\net6.0\TemplateProjectOne.Infrastructure.pdb
 D:\Try\New\Template Project one\TemplateProjectone.Infrastructure\obj\Debug\net6.0\TemplateProjectOne.Infrastructure.csproj.AssemblyReference.cache
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Infrastructure\bin\Debug\net6.0\TemplateProjectOne.Infrastructure.deps.json
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Infrastructure\bin\Debug\net6.0\TemplateProjectOne.Infrastructure.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Infrastructure\bin\Debug\net6.0\ref\TemplateProjectOne.Infrastructure.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Infrastructure\bin\Debug\net6.0\TemplateProjectOne.Infrastructure.pdb
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Infrastructure\obj\Debug\net6.0\TemplateProjectOne.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Infrastructure\obj\Debug\net6.0\TemplateProjectOne.Infrastructure.AssemblyInfoInputs.cache
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Infrastructure\obj\Debug\net6.0\TemplateProjectOne.Infrastructure.AssemblyInfo.cs
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Infrastructure\obj\Debug\net6.0\TemplateProjectOne.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Infrastructure\obj\Debug\net6.0\TemplateProjectOne.Infrastructure.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Infrastructure\obj\Debug\net6.0\ref\TemplateProjectOne.Infrastructure.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Infrastructure\obj\Debug\net6.0\TemplateProjectOne.Infrastructure.pdb
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Infrastructure\obj\Debug\net6.0\TemplateProjectOne.Infrastructure.csproj.AssemblyReference.cache

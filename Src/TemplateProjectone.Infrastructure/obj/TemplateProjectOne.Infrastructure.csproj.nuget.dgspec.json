@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Try\\New\\Template Project one\\TemplateProjectone.Infrastructure\\TemplateProjectOne.Infrastructure.csproj": {}
+    "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Infrastructure\\TemplateProjectOne.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\Try\\New\\Template Project one\\TemplateProjectone.Infrastructure\\TemplateProjectOne.Infrastructure.csproj": {
+    "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Infrastructure\\TemplateProjectOne.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Infrastructure\\TemplateProjectOne.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Infrastructure\\TemplateProjectOne.Infrastructure.csproj",
         "projectName": "TemplateProjectOne.Infrastructure",
-        "projectPath": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Infrastructure\\TemplateProjectOne.Infrastructure.csproj",
+        "projectPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Infrastructure\\TemplateProjectOne.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Hossein\\.nuget\\packages\\",
-        "outputPath": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Infrastructure\\obj\\",
+        "outputPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
