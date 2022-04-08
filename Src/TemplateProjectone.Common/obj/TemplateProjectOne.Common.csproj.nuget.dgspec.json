@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Try\\New\\Template Project one\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj": {}
+    "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj": {}
   },
   "projects": {
-    "D:\\Try\\New\\Template Project one\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj": {
+    "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj",
+        "projectUniqueName": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj",
         "projectName": "TemplateProjectOne.Common",
-        "projectPath": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj",
+        "projectPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj",
         "packagesPath": "C:\\Users\\Hossein\\.nuget\\packages\\",
-        "outputPath": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Common\\obj\\",
+        "outputPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

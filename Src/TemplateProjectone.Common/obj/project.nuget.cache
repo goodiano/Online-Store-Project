@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ySwf2TV7L9gUjfYcLdbPS3cGYG1K8BLCPeDegMXMnlia0nl74YrT2JbDTJLuEANyMbKqDDtG9j2SRIcPKm+iUA==",
+  "dgSpecHash": "/8f6SbYpjOWlpt4M5tbPjmL3eAHuLm3cshqZ1FrmMbHxZ3Pox0x1S3f0Ojv5u0OqEV19qWGzBYDPt02S65rItg==",
   "success": true,
-  "projectFilePath": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj",
+  "projectFilePath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hossein\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.1\\microsoft.aspnetcore.cryptography.internal.6.0.1.nupkg.sha512",
     "C:\\Users\\Hossein\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.1\\microsoft.aspnetcore.cryptography.keyderivation.6.0.1.nupkg.sha512"

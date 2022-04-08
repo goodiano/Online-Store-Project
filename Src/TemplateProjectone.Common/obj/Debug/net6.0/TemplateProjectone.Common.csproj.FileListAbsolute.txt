@@ -21,3 +21,15 @@ D:\Try\New\Template Project one\TemplateProjectone.Common\obj\Debug\net6.0\Templ
 D:\Try\New\Template Project one\TemplateProjectone.Common\obj\Debug\net6.0\TemplateProjectOne.Common.dll
 D:\Try\New\Template Project one\TemplateProjectone.Common\obj\Debug\net6.0\ref\TemplateProjectOne.Common.dll
 D:\Try\New\Template Project one\TemplateProjectone.Common\obj\Debug\net6.0\TemplateProjectOne.Common.pdb
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Common\bin\Debug\net6.0\TemplateProjectOne.Common.deps.json
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Common\bin\Debug\net6.0\TemplateProjectOne.Common.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Common\bin\Debug\net6.0\ref\TemplateProjectOne.Common.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Common\bin\Debug\net6.0\TemplateProjectOne.Common.pdb
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Common\obj\Debug\net6.0\TemplateProjectOne.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Common\obj\Debug\net6.0\TemplateProjectOne.Common.AssemblyInfoInputs.cache
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Common\obj\Debug\net6.0\TemplateProjectOne.Common.AssemblyInfo.cs
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Common\obj\Debug\net6.0\TemplateProjectOne.Common.csproj.CoreCompileInputs.cache
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Common\obj\Debug\net6.0\TemplateProjectOne.Common.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Common\obj\Debug\net6.0\ref\TemplateProjectOne.Common.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Common\obj\Debug\net6.0\TemplateProjectOne.Common.pdb
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Common\obj\Debug\net6.0\TemplateProjectOne.Common.csproj.AssemblyReference.cache
