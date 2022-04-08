@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VVc7vAWgAqAAyIc7eO2v7aGZY5/vq0Cx8UrM5dvrX/PBSYgiGVayNO9n1cwPEbIlDsaOomBHxOkjFUR2LLJQmA==",
+  "dgSpecHash": "rO5Zb6AYc3b4tDn0y3S/SUv45hoVikjoSPDDFJHzizLS3/NLxKqFK28i5c7p7xFuDOTU8EPrT9dKvbQdFuRiNw==",
   "success": true,
-  "projectFilePath": "D:\\Try\\New\\Template Project one\\EndPoint.Site\\EndPoint.Site.csproj",
+  "projectFilePath": "D:\\Try\\New\\TemplateProjectOne\\EndPoint.Site\\EndPoint.Site.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hossein\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Hossein\\.nuget\\packages\\lazziya.expresslocalization\\4.0.4\\lazziya.expresslocalization.4.0.4.nupkg.sha512",
@@ -224,7 +224,8 @@
     "C:\\Users\\Hossein\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Hossein\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\Hossein\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Hossein\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Hossein\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Hossein\\.nuget\\packages\\zarinpal\\3.0.1\\zarinpal.3.0.1.nupkg.sha512"
   ],
   "logs": []
 }

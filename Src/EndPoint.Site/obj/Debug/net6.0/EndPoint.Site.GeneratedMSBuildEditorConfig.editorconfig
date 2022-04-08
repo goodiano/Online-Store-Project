@@ -8,105 +8,117 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EndPoint.Site
 build_property.RootNamespace = EndPoint.Site
-build_property.ProjectDir = D:\Try\New\Template Project one\EndPoint.Site\
+build_property.ProjectDir = D:\Try\New\TemplateProjectOne\EndPoint.Site\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Try\New\Template Project one\EndPoint.Site
+build_property.MSBuildProjectDirectory = D:\Try\New\TemplateProjectOne\EndPoint.Site
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Areas/Admin/Views/Categories/Category.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Areas/Admin/Views/Categories/Category.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Areas/Admin/Views/Categories/Index.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Areas/Admin/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Areas/Admin/Views/HomePageImage/Add.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Areas/Admin/Views/HomePageImage/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVBhZ2VJbWFnZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Areas/Admin/Views/Product/AddNewProduct.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Areas/Admin/Views/Product/AddNewProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxBZGROZXdQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Areas/Admin/Views/Product/Detail.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Areas/Admin/Views/Product/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Areas/Admin/Views/Product/Index.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Areas/Admin/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Areas/Admin/Views/Shared/_Layout.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Areas/Admin/Views/Sliders/AddSliders.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Areas/Admin/Views/Sliders/AddSliders.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyc1xBZGRTbGlkZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Areas/Admin/Views/Sliders/Index.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Areas/Admin/Views/Sliders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Areas/Admin/Views/Users/Create.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Areas/Admin/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Areas/Admin/Views/Users/Index.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Areas/Admin/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Views/Authentication/SignIn.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/Authentication/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cU2lnbkluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Views/Authentication/SignUp.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/Authentication/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cU2lnblVwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Views/Home/Index.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Views/Home/Privacy.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Views/Product/Detail.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/Product/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Views/Product/Index.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Views/Shared/Components/GetItemMenu/GetItemMenu.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/Shared/Components/Cart/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FydFxDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/Shared/Components/GetItemMenu/GetItemMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2V0SXRlbU1lbnVcR2V0SXRlbU1lbnUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Views/Shared/Components/Search/Search.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/Shared/Components/Search/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VhcmNoXFNlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Views/Shared/Error.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Views/_ViewImports.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Views/_ViewStart.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Try/New/Template Project one/EndPoint.Site/Views/Shared/_Layout.cshtml]
+[D:/Try/New/TemplateProjectOne/EndPoint.Site/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-olczgf6xwz
