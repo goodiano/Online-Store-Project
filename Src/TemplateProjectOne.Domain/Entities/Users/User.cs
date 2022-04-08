@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TemplateProjectOne.Domain.Entities.Common;
+using TemplateProjectOne.Domain.Entities.Orders;
 
 namespace TemplateProjectOne.Domain.Entities.Users
 {
@@ -14,5 +15,6 @@ namespace TemplateProjectOne.Domain.Entities.Users
         public string Password { get; set; }
         public bool IsActive { get; set; }
         public ICollection<UserInRole> UserInRoles { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }
