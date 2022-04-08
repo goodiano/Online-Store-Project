@@ -10,6 +10,7 @@ using TemplateProjectOne.Domain.Entities.Product.HomePages;
 using TemplateProjectOne.Domain.Entities.Product.HomePages.HomePageImages;
 using TemplateProjectOne.Domain.Entities.Carts;
 using TemplateProjectOne.Domain.Entities.Fainance;
+using TemplateProjectOne.Domain.Entities.Orders;
 
 namespace TemplateProjectOne.Application.Interfaces.Contextes
 {
@@ -27,6 +28,8 @@ namespace TemplateProjectOne.Application.Interfaces.Contextes
         DbSet<Cart> Cart { get; set; }
         DbSet<CartItem> CartItem { get; set; }
         DbSet<RequestPay> RequestPay { get; set; }
+        DbSet<Order> Order { get; set; }
+        DbSet<OrderDetail> OrderDetail { get; set; }
 
 
         int SaveChanges(bool acceptAllChangesOnSuccess);

@@ -19,8 +19,4 @@
     <ProjectReference Include="..\TemplateProjectOne.Domain\TemplateProjectOne.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\Pay\Query\" />
-  </ItemGroup>
-
 </Project>

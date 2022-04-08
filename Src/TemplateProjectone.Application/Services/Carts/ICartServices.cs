@@ -125,6 +125,7 @@ namespace TemplateProjectOne.Application.Services.Carts
                 {
                     Data = new CartDto()
                     {
+                        CartId = cart.Id,
                         CountProduct = cart.CartItems.Count(),
                         SumAmount = cart.CartItems.Sum(p => p.Price * p.Count),
                         CartItems = cart.CartItems.Select(p => new CartItemDto
@@ -197,6 +198,7 @@ namespace TemplateProjectOne.Application.Services.Carts
 
     public class CartDto
     {
+        public int CartId { get; set; }
         public int CountProduct { get; set; }
         public decimal SumAmount { get; set; }
         public List<CartItemDto> CartItems { get; set; }
