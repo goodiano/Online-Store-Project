@@ -10,6 +10,9 @@ using TemplateProjectOne.Common.Roles;
 using TemplateProjectOne.Domain.Entities.Product;
 using TemplateProjectOne.Domain.Entities.Product.HomePages;
 using TemplateProjectOne.Domain.Entities.Product.HomePages.HomePageImages;
+using TemplateProjectOne.Domain.Entities.Carts;
+using TemplateProjectOne.Domain.Entities.Fainance;
+using TemplateProjectOne.Domain.Entities.Orders;
 
 namespace TemplateProjectOne.Persistance.Context
 {
@@ -27,10 +30,28 @@ namespace TemplateProjectOne.Persistance.Context
         public DbSet<ProductImages> ProductImages { get; set; }
         public DbSet<Sliders> Sliders { get; set; }
         public DbSet<HomePageImages> HomePageImages { get; set; }
+        public DbSet<Cart> Cart { get; set; }
+        public DbSet<CartItem> CartItem { get; set; }
+        public DbSet<RequestPay> RequestPay { get; set; }
+        public DbSet<Order> Order { get; set; }
+        public DbSet<OrderDetail> OrderDetail { get; set; }
+
+
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            modelBuilder.Entity<Order>()
+               .HasOne(p => p.User)
+               .WithMany(p => p.Orders)
+               .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Order>()
+                .HasOne(p => p.RequestPay)
+                .WithMany(p => p.Orders)
+                .OnDelete(DeleteBehavior.NoAction);
 
             //Seed Data
             SeedData(modelBuilder);
@@ -58,6 +79,9 @@ namespace TemplateProjectOne.Persistance.Context
             modelBuilder.Entity<Role>().HasQueryFilter(p => !p.IsRemoved);
             modelBuilder.Entity<UserInRole>().HasQueryFilter(p => !p.IsRemoved);
             modelBuilder.Entity<Category>().HasQueryFilter(p => !p.IsRemoved);
+            modelBuilder.Entity<Cart>().HasQueryFilter(p => !p.IsRemoved);
+            modelBuilder.Entity<CartItem>().HasQueryFilter(p => !p.IsRemoved);
+            modelBuilder.Entity<RequestPay>().HasQueryFilter(p => !p.IsRemoved);
         }
 
 

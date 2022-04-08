@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QPrWGBrl9gwXBxVTFTyu0L0LCXBuQFBU2vd9lO77hZfAVJbKt3iLfFOBtwzRaZpTKK07ZgsBw9h86fGPu+v4fg==",
+  "dgSpecHash": "zWWfLgQyXsvUGH9jOkvLkjEOHZILT67kp2hupTubhGK++c6Q4tZidrG1lf4QBBm2vriP5bIytMkVGkDNUwhVDQ==",
   "success": true,
-  "projectFilePath": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Persistance\\TemplateProjectOne.Persistance.csproj",
+  "projectFilePath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Persistance\\TemplateProjectOne.Persistance.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hossein\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Hossein\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.1\\microsoft.aspnetcore.cryptography.internal.6.0.1.nupkg.sha512",

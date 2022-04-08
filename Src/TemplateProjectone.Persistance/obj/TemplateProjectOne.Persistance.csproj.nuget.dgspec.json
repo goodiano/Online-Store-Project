@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Try\\New\\Template Project one\\TemplateProjectone.Persistance\\TemplateProjectOne.Persistance.csproj": {}
+    "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Persistance\\TemplateProjectOne.Persistance.csproj": {}
   },
   "projects": {
-    "D:\\Try\\New\\Template Project one\\TemplateProjectone.Application\\TemplateProjectOne.Application.csproj": {
+    "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Application\\TemplateProjectOne.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Application\\TemplateProjectOne.Application.csproj",
+        "projectUniqueName": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Application\\TemplateProjectOne.Application.csproj",
         "projectName": "TemplateProjectOne.Application",
-        "projectPath": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Application\\TemplateProjectOne.Application.csproj",
+        "projectPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Application\\TemplateProjectOne.Application.csproj",
         "packagesPath": "C:\\Users\\Hossein\\.nuget\\packages\\",
-        "outputPath": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Application\\obj\\",
+        "outputPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,11 +31,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Try\\New\\Template Project one\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj": {
-                "projectPath": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj"
+              "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj": {
+                "projectPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj"
               },
-              "D:\\Try\\New\\Template Project one\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj": {
-                "projectPath": "D:\\Try\\New\\Template Project one\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj"
+              "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj": {
+                "projectPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj"
               }
             }
           }
@@ -90,14 +90,14 @@
         }
       }
     },
-    "D:\\Try\\New\\Template Project one\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj": {
+    "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj",
+        "projectUniqueName": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj",
         "projectName": "TemplateProjectOne.Common",
-        "projectPath": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj",
+        "projectPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Common\\TemplateProjectOne.Common.csproj",
         "packagesPath": "C:\\Users\\Hossein\\.nuget\\packages\\",
-        "outputPath": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Common\\obj\\",
+        "outputPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -153,14 +153,14 @@
         }
       }
     },
-    "D:\\Try\\New\\Template Project one\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj": {
+    "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Try\\New\\Template Project one\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj",
+        "projectUniqueName": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj",
         "projectName": "TemplateProjectOne.Domain",
-        "projectPath": "D:\\Try\\New\\Template Project one\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj",
+        "projectPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj",
         "packagesPath": "C:\\Users\\Hossein\\.nuget\\packages\\",
-        "outputPath": "D:\\Try\\New\\Template Project one\\TemplateProjectOne.Domain\\obj\\",
+        "outputPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectOne.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -218,14 +218,14 @@
         }
       }
     },
-    "D:\\Try\\New\\Template Project one\\TemplateProjectone.Persistance\\TemplateProjectOne.Persistance.csproj": {
+    "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Persistance\\TemplateProjectOne.Persistance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Persistance\\TemplateProjectOne.Persistance.csproj",
+        "projectUniqueName": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Persistance\\TemplateProjectOne.Persistance.csproj",
         "projectName": "TemplateProjectOne.Persistance",
-        "projectPath": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Persistance\\TemplateProjectOne.Persistance.csproj",
+        "projectPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Persistance\\TemplateProjectOne.Persistance.csproj",
         "packagesPath": "C:\\Users\\Hossein\\.nuget\\packages\\",
-        "outputPath": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Persistance\\obj\\",
+        "outputPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Persistance\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -245,11 +245,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Try\\New\\Template Project one\\TemplateProjectone.Application\\TemplateProjectOne.Application.csproj": {
-                "projectPath": "D:\\Try\\New\\Template Project one\\TemplateProjectone.Application\\TemplateProjectOne.Application.csproj"
+              "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Application\\TemplateProjectOne.Application.csproj": {
+                "projectPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectone.Application\\TemplateProjectOne.Application.csproj"
               },
-              "D:\\Try\\New\\Template Project one\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj": {
-                "projectPath": "D:\\Try\\New\\Template Project one\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj"
+              "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj": {
+                "projectPath": "D:\\Try\\New\\TemplateProjectOne\\TemplateProjectOne.Domain\\TemplateProjectOne.Domain.csproj"
               }
             }
           }

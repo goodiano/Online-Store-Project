@@ -40,3 +40,24 @@ D:\Try\New\Template Project one\TemplateProjectone.Persistance\obj\Debug\net6.0\
 D:\Try\New\Template Project one\TemplateProjectone.Persistance\obj\Debug\net6.0\ref\TemplateProjectOne.Persistance.dll
 D:\Try\New\Template Project one\TemplateProjectone.Persistance\obj\Debug\net6.0\TemplateProjectOne.Persistance.pdb
 D:\Try\New\Template Project one\TemplateProjectone.Persistance\obj\Debug\net6.0\TemplateProjectOne.Persistance.genruntimeconfig.cache
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\bin\Debug\net6.0\TemplateProjectOne.Persistance.deps.json
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\bin\Debug\net6.0\TemplateProjectOne.Persistance.runtimeconfig.json
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\bin\Debug\net6.0\TemplateProjectOne.Persistance.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\bin\Debug\net6.0\ref\TemplateProjectOne.Persistance.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\bin\Debug\net6.0\TemplateProjectOne.Persistance.pdb
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\bin\Debug\net6.0\TemplateProjectOne.Application.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\bin\Debug\net6.0\TemplateProjectOne.Common.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\bin\Debug\net6.0\TemplateProjectOne.Domain.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\bin\Debug\net6.0\TemplateProjectOne.Application.pdb
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\bin\Debug\net6.0\TemplateProjectOne.Domain.pdb
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\bin\Debug\net6.0\TemplateProjectOne.Common.pdb
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\obj\Debug\net6.0\TemplateProjectOne.Persistance.csproj.AssemblyReference.cache
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\obj\Debug\net6.0\TemplateProjectOne.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\obj\Debug\net6.0\TemplateProjectOne.Persistance.AssemblyInfoInputs.cache
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\obj\Debug\net6.0\TemplateProjectOne.Persistance.AssemblyInfo.cs
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\obj\Debug\net6.0\TemplateProjectOne.Persistance.csproj.CoreCompileInputs.cache
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\obj\Debug\net6.0\TemplateProjectOne.Persistance.csproj.CopyComplete
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\obj\Debug\net6.0\TemplateProjectOne.Persistance.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\obj\Debug\net6.0\ref\TemplateProjectOne.Persistance.dll
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\obj\Debug\net6.0\TemplateProjectOne.Persistance.pdb
+D:\Try\New\TemplateProjectOne\TemplateProjectone.Persistance\obj\Debug\net6.0\TemplateProjectOne.Persistance.genruntimeconfig.cache

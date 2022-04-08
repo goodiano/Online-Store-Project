@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TemplateProjectOne.Persistance.Context;
 
@@ -11,9 +12,10 @@ using TemplateProjectOne.Persistance.Context;
 namespace TemplateProjectOne.Persistance.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    partial class DataBaseContextModelSnapshot : ModelSnapshot
+    [Migration("20220404205514_EditRequestPay")]
+    partial class EditRequestPay
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -146,89 +148,6 @@ namespace TemplateProjectOne.Persistance.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("RequestPay");
-                });
-
-            modelBuilder.Entity("TemplateProjectOne.Domain.Entities.Orders.Order", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("InsertTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsRemoved")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("OrderState")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("RemoveTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("RequestPayId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("UpdateTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("RequestPayId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Order");
-                });
-
-            modelBuilder.Entity("TemplateProjectOne.Domain.Entities.Orders.OrderDetail", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("Count")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("InsertTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsRemoved")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Price")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("RemoveTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("UpdateTime")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OrderId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("OrderDetail");
                 });
 
             modelBuilder.Entity("TemplateProjectOne.Domain.Entities.Product.AddProduct", b =>
@@ -514,21 +433,21 @@ namespace TemplateProjectOne.Persistance.Migrations
                         new
                         {
                             Id = 1,
-                            InsertTime = new DateTime(2022, 4, 6, 22, 28, 26, 519, DateTimeKind.Local).AddTicks(5674),
+                            InsertTime = new DateTime(2022, 4, 5, 1, 25, 13, 820, DateTimeKind.Local).AddTicks(778),
                             IsRemoved = false,
                             Name = "Admin"
                         },
                         new
                         {
                             Id = 2,
-                            InsertTime = new DateTime(2022, 4, 6, 22, 28, 26, 519, DateTimeKind.Local).AddTicks(5757),
+                            InsertTime = new DateTime(2022, 4, 5, 1, 25, 13, 820, DateTimeKind.Local).AddTicks(851),
                             IsRemoved = false,
                             Name = "Operator"
                         },
                         new
                         {
                             Id = 3,
-                            InsertTime = new DateTime(2022, 4, 6, 22, 28, 26, 519, DateTimeKind.Local).AddTicks(5770),
+                            InsertTime = new DateTime(2022, 4, 5, 1, 25, 13, 820, DateTimeKind.Local).AddTicks(869),
                             IsRemoved = false,
                             Name = "Customer"
                         });
@@ -651,44 +570,6 @@ namespace TemplateProjectOne.Persistance.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("TemplateProjectOne.Domain.Entities.Orders.Order", b =>
-                {
-                    b.HasOne("TemplateProjectOne.Domain.Entities.Fainance.RequestPay", "RequestPay")
-                        .WithMany("Orders")
-                        .HasForeignKey("RequestPayId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("TemplateProjectOne.Domain.Entities.Users.User", "User")
-                        .WithMany("Orders")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.Navigation("RequestPay");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("TemplateProjectOne.Domain.Entities.Orders.OrderDetail", b =>
-                {
-                    b.HasOne("TemplateProjectOne.Domain.Entities.Orders.Order", "Order")
-                        .WithMany()
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("TemplateProjectOne.Domain.Entities.Product.AddProduct", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Order");
-
-                    b.Navigation("Product");
-                });
-
             modelBuilder.Entity("TemplateProjectOne.Domain.Entities.Product.AddProduct", b =>
                 {
                     b.HasOne("TemplateProjectOne.Domain.Entities.Product.Category", "Category")
@@ -753,11 +634,6 @@ namespace TemplateProjectOne.Persistance.Migrations
                     b.Navigation("CartItems");
                 });
 
-            modelBuilder.Entity("TemplateProjectOne.Domain.Entities.Fainance.RequestPay", b =>
-                {
-                    b.Navigation("Orders");
-                });
-
             modelBuilder.Entity("TemplateProjectOne.Domain.Entities.Product.AddProduct", b =>
                 {
                     b.Navigation("ProductFeature");
@@ -777,8 +653,6 @@ namespace TemplateProjectOne.Persistance.Migrations
 
             modelBuilder.Entity("TemplateProjectOne.Domain.Entities.Users.User", b =>
                 {
-                    b.Navigation("Orders");
-
                     b.Navigation("UserInRoles");
                 });
 #pragma warning restore 612, 618
