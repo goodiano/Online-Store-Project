@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TemplateProjectOne.Domain.Entities.Common;
+using TemplateProjectOne.Domain.Entities.Orders;
 using TemplateProjectOne.Domain.Entities.Users;
 
 namespace TemplateProjectOne.Domain.Entities.Fainance
@@ -18,5 +19,6 @@ namespace TemplateProjectOne.Domain.Entities.Fainance
         public DateTime? DatePay { get; set; }
         public string Authority { get; set; } = " ";
         public long RefId { get; set; } = 0;
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }
