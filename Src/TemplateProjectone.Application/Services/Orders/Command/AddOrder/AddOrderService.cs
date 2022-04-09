@@ -26,7 +26,8 @@ namespace TemplateProjectOne.Application.Services.Orders.Command.AddOrder
 
             requestPay.isPay = true;
             requestPay.DatePay = DateTime.Now;
-
+            requestPay.Authority = reqeust.Authority;
+            requestPay.RefId = reqeust.RefId;
             cart.Finished = true;
 
             Order order = new Order()
@@ -45,7 +46,7 @@ namespace TemplateProjectOne.Application.Services.Orders.Command.AddOrder
                 OrderDetail orderDetail = new OrderDetail()
                 {
                     Count = item.Count,
-                    Price = item.Product.Price,
+                    Price = ((int)item.Product.Price),
                     Product = item.Product,
                     Order = order
                 };

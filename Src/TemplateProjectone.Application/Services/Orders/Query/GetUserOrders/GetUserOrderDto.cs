@@ -6,7 +6,6 @@ namespace TemplateProjectOne.Application.Services.Orders.Query.GetUserOrders
     {
         public int OrderId { get; set; }
         public int RequestPayId { get; set; }
-        public string Address { get; set; }
         public OrderState OrderState { get; set; }
         public List<GetUserOrderDetailDto> OrderDetailes { get; set; }
     }

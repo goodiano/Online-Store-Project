@@ -21,7 +21,6 @@ namespace TemplateProjectOne.Application.Services.Orders.Query.GetUserOrders
                 .OrderByDescending(p => p.Id).ToList().Select(p => new GetUserOrderDto
                 {
                     OrderId = p.Id,
-                    Address = p.Address,
                     OrderState = p.OrderState,
                     RequestPayId = p.RequestPayId,
                     OrderDetailes = p.OrderDetails.Select(s=> new GetUserOrderDetailDto
