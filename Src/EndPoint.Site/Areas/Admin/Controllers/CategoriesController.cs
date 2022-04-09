@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TemplateProjectOne.Application.Interfaces.FacadPattern;
 using TemplateProjectOne.Application.Services.Product.Categories.Command.EditCategory;
 
 namespace EndPoint.Site.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin , Operator")]
     public class CategoriesController : Controller
     {
         private readonly ICategoryFacadPattern _categoryFacadPattern;

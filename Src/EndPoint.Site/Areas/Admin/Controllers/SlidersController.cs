@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TemplateProjectone.Application.Services.HomePages.Query.GetSliders;
 using TemplateProjectOne.Application.Services.HomePages;
 using TemplateProjectOne.Application.Services.HomePages.Command.DeleteSlider;
@@ -7,6 +8,7 @@ using TemplateProjectOne.Application.Services.HomePages.Command.EditSlider;
 namespace EndPoint.Site.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin , Operator")]
     public class SlidersController : Controller
     {
         private readonly IAddSliderServices _slider;

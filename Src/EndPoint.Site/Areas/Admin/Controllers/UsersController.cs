@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using TemplateProjectOne.Application.Interfaces.FacadPattern;
 using TemplateProjectOne.Application.Services.Users.Commands;
@@ -10,6 +11,7 @@ using TemplateProjectOne.Application.Services.Users.Queries.GetRoles;
 namespace EndPoint.Site.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin , Operator")]
     public class UsersController : Controller
     {
         private readonly IGetUsersService _getUsersService;

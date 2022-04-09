@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TemplateProjectone.Application.Services.HomePages.Command.AddHomePageImages;
 using TemplateProjectOne.Domain.Entities.Product.HomePages.HomePageImages;
 
 namespace EndPoint.Site.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin , Operator")]
     public class HomePageImageController : Controller
     {
         private readonly IAddHomePageImageServices _addHomePageImage;

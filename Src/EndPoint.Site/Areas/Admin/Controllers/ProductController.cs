@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using TemplateProjectOne.Application.Interfaces.FacadPattern;
 using TemplateProjectOne.Application.Services.Product.Product.Command.EditProduct;
@@ -6,6 +7,7 @@ using TemplateProjectOne.Application.Services.Product.Product.Command.EditProduc
 namespace EndPoint.Site.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin , Operator")]
     public class ProductController : Controller
     {
         private readonly IProductFacadPattern _productFacad;
