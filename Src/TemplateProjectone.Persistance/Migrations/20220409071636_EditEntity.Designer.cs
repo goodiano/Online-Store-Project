@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TemplateProjectOne.Persistance.Context;
 
@@ -11,9 +12,10 @@ using TemplateProjectOne.Persistance.Context;
 namespace TemplateProjectOne.Persistance.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    partial class DataBaseContextModelSnapshot : ModelSnapshot
+    [Migration("20220409071636_EditEntity")]
+    partial class EditEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -111,6 +113,7 @@ namespace TemplateProjectOne.Persistance.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Authority")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("DatePay")
@@ -513,21 +516,21 @@ namespace TemplateProjectOne.Persistance.Migrations
                         new
                         {
                             Id = 1,
-                            InsertTime = new DateTime(2022, 4, 9, 15, 52, 17, 551, DateTimeKind.Local).AddTicks(1711),
+                            InsertTime = new DateTime(2022, 4, 9, 11, 46, 36, 437, DateTimeKind.Local).AddTicks(9133),
                             IsRemoved = false,
                             Name = "Admin"
                         },
                         new
                         {
                             Id = 2,
-                            InsertTime = new DateTime(2022, 4, 9, 15, 52, 17, 551, DateTimeKind.Local).AddTicks(1777),
+                            InsertTime = new DateTime(2022, 4, 9, 11, 46, 36, 437, DateTimeKind.Local).AddTicks(9201),
                             IsRemoved = false,
                             Name = "Operator"
                         },
                         new
                         {
                             Id = 3,
-                            InsertTime = new DateTime(2022, 4, 9, 15, 52, 17, 551, DateTimeKind.Local).AddTicks(1791),
+                            InsertTime = new DateTime(2022, 4, 9, 11, 46, 36, 437, DateTimeKind.Local).AddTicks(9216),
                             IsRemoved = false,
                             Name = "Customer"
                         });
