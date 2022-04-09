@@ -17,7 +17,7 @@ namespace TemplateProjectOne.Domain.Entities.Fainance
         public decimal Amount { get; set; }
         public bool isPay { get; set; }
         public DateTime? DatePay { get; set; }
-        public string Authority { get; set; } = " ";
+        public string? Authority { get; set; }
         public long RefId { get; set; } = 0;
         public virtual ICollection<Order> Orders { get; set; }
     }
